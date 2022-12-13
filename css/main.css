@@ -331,7 +331,12 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 44px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .social-networks {
+    margin-bottom: 30px;
+  }
 }
 
 .social-networks__item {
@@ -951,6 +956,18 @@ html {
 /* team */
 .team {
   background-color: #f5f4fa;
+}
+
+.team__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.1785714286;
+    margin-bottom: 30px;
+  }
 }
 
 .team__list {
