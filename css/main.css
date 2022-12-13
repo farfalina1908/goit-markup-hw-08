@@ -992,9 +992,7 @@ html {
 
 .team__item {
   width: 450px;
-  height: 622px;
   margin-right: 0;
-  margin-bottom: 30px;
   border: 1px solid var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1004,15 +1002,24 @@ html {
 @media screen and (min-width: 768px) {
   .team__item {
     width: 354px;
-    height: 536px;
     margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
     width: 270px;
-    height: 428px;
     margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item:not(:last-child) {
     margin-bottom: 0;
   }
 }
@@ -1031,6 +1038,12 @@ html {
 @media screen and (min-width: 1200px) {
   .team__item:nth-child(4n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 
