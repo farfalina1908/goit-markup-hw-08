@@ -47,10 +47,20 @@
    background-color: var(--accent-color);
 }
 .contact-nav {
-   display: flex;
-   margin-left: auto;
    text-decoration: none;
    font-style: normal;
+   @media screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
+   }
+   @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: auto;
+   }
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: auto;
+   }
 }
 
 .contact-nav__item + .contact-nav__item {
