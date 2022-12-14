@@ -1209,6 +1209,17 @@ html {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+
 .footer-content {
   display: block;
 }

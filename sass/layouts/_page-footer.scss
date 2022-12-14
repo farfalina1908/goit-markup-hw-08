@@ -4,6 +4,14 @@
    padding-top: 60px;
    padding-bottom: 60px;
 }
+.footer .container {
+   @media screen and (min-width: 768px) {
+      display: flex;
+   flex-wrap: wrap;
+   gap: 60px;
+   }
+   
+}
 .footer-content {
    display: block;
    @media screen and (min-width: 768px) {
