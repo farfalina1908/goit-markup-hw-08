@@ -24,7 +24,6 @@
    <body class="body-page">
       <!-- Основна навігація -->
       <header class="header-page">
-         
          <div class="container main-nav">
             <nav class="main-nav">
                <a href="/" class="logo link"
@@ -49,45 +48,45 @@
                   </li>
                </ul>
             </nav>
-<div class="contact">
-            <ul class="contact-nav list">
-               <li class="contact-nav__item">
-                  <div>
-                     <a
-                        href="mailto:info@devstudio.com"
-                        class="contact-info link contact-nav__link"
-                     >
-                        <div class="contact-way">
-                           <svg class="contact-nav__mail-icon">
-                              <use
-                                 href="./images/symbol-defs.svg#icon-envelope"
-                              ></use>
-                           </svg>
-                        </div>
-                        info@devstudio.com</a
-                     >
-                  </div>
-               </li>
+            <div class="contact">
+               <ul class="contact-nav list">
+                  <li class="contact-nav__item">
+                     <div>
+                        <a
+                           href="mailto:info@devstudio.com"
+                           class="contact-info link contact-nav__link"
+                        >
+                           <div class="contact-way">
+                              <svg class="contact-nav__mail-icon">
+                                 <use
+                                    href="./images/symbol-defs.svg#icon-envelope"
+                                 ></use>
+                              </svg>
+                           </div>
+                           info@devstudio.com</a
+                        >
+                     </div>
+                  </li>
 
-               <li class="contact-nav__item">
-                  <div>
-                     <a
-                        href="tel:+380961111111"
-                        class="contact-info link contact-nav__link"
-                     >
-                        <div class="contact-way">
-                           <svg class="contact-nav__phone-icon">
-                              <use
-                                 href="./images/symbol-defs.svg#icon-smartphone"
-                              ></use>
-                           </svg>
-                        </div>
-                        +38 096 111 11 11</a
-                     >
-                  </div>
-               </li>
-            </ul>
-         </div>
+                  <li class="contact-nav__item">
+                     <div>
+                        <a
+                           href="tel:+380961111111"
+                           class="contact-info link contact-nav__link"
+                        >
+                           <div class="contact-way">
+                              <svg class="contact-nav__phone-icon">
+                                 <use
+                                    href="./images/symbol-defs.svg#icon-smartphone"
+                                 ></use>
+                              </svg>
+                           </div>
+                           +38 096 111 11 11</a
+                        >
+                     </div>
+                  </li>
+               </ul>
+            </div>
          </div>
       </header>
 
@@ -177,8 +176,13 @@
                      <div class="label">
                         <img
                            class="pic"
+                           srcset="
+                              ./images/box1@1x.jpg 1x,
+                              ./images/box1@2x.jpg 2x
+                           "
                            src="./images/box1.jpg"
-                           alt="руки на клавіатурі"
+                           alt="руки
+                        на клавіатурі"
                            width="370"
                         />
                         <p class="label__text">Декстопні додатки</p>
@@ -189,6 +193,10 @@
                      <div class="label">
                         <img
                            class="pic"
+                           srcset="
+                              ./images/box2@1x.jpg 1x,
+                              ./images/box2@2x.jpg 2x
+                           "
                            src="./images/box2.jpg"
                            alt="руки зі смартфоном"
                            width="370"
@@ -201,6 +209,10 @@
                      <div class="label">
                         <img
                            class="pic"
+                           srcset="
+                              ./images/box3@1x.jpg 1x,
+                              ./images/box3@2x.jpg 2x
+                           "
                            src="./images/box3.jpg"
                            alt="руки з планшетом"
                            width="370"
@@ -220,9 +232,18 @@
                   <li class="team__item">
                      <img
                         class="pic"
-                        src="./images/img1.jpg"
+                        srcset="
+                           ./images/img1_270.jpg 270w,
+                           ./images/img1_354.jpg 354w,
+                           ./images/img1_450.jpg 450w,
+                           ./images/img1_540.jpg 540w,
+                           ./images/img1_708.jpg 708w,
+                           ./images/img1_900.jpg 900w
+                        "
+                        src="./images/img1_450.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                         alt="Ігор Дем'яненко"
-                        width="270"
+                        width="450"
                      />
                      <h3 class="team__worker-name">Ігор Дем'яненко</h3>
                      <p class="team__worker-profession">Product Designer</p>
@@ -276,9 +297,18 @@
                   <li class="team__item">
                      <img
                         class="pic"
-                        src="./images/img2.jpg"
+                        srcset="
+                           ./images/img2_270.jpg 270w,
+                           ./images/img2_354.jpg 354w,
+                           ./images/img2_450.jpg 450w,
+                           ./images/img2_540.jpg 540w,
+                           ./images/img2_708.jpg 708w,
+                           ./images/img2_900.jpg 900w
+                        "
+                        src="./images/img2_450.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                         alt="Ольга Рєпіна"
-                        width="270"
+                        width="450"
                      />
                      <h3 class="team__worker-name">Ольга Рєпіна</h3>
                      <p class="team__worker-profession">Frontend Developer</p>
@@ -332,9 +362,18 @@
                   <li class="team__item">
                      <img
                         class="pic"
-                        src="./images/img3.jpg"
+                        srcset="
+                           ./images/img3_270.jpg 270w,
+                           ./images/img3_354.jpg 354w,
+                           ./images/img3_450.jpg 450w,
+                           ./images/img3_540.jpg 540w,
+                           ./images/img3_708.jpg 708w,
+                           ./images/img3_900.jpg 900w
+                        "
+                        src="./images/img3_450.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                         alt="Микола Тарасов"
-                        width="270"
+                        width="450"
                      />
                      <h3 class="team__worker-name">Микола Тарасов</h3>
                      <p class="team__worker-profession">Marketing</p>
@@ -388,9 +427,18 @@
                   <li class="team__item">
                      <img
                         class="pic"
-                        src="./images/img4.jpg"
+                        srcset="
+                           ./images/img4_270.jpg 270w,
+                           ./images/img4_354.jpg 354w,
+                           ./images/img4_450.jpg 450w,
+                           ./images/img4_540.jpg 540w,
+                           ./images/img4_708.jpg 708w,
+                           ./images/img4_900.jpg 900w
+                        "
+                        src="./images/img4_450.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                         alt="Михайло Єрмаков"
-                        width="270"
+                        width="450"
                      />
                      <h3 class="team__worker-name">Михайло Єрмаков</h3>
                      <p class="team__worker-profession">UI Designer</p>
