@@ -49,17 +49,22 @@
 .contact-nav {
    text-decoration: none;
    font-style: normal;
-   @media screen and (max-width: 767px) {
+   @media screen and (max-width: 1199px) {
       display: block;
       text-align: center;
    }
    @media screen and (min-width: 768px) {
-      display: flex;
-      margin-left: auto;
+      margin-bottom: 60px;
+      margin-left: 76px;
    }
+   // @media screen and (min-width: 768px) {
+   //    display: flex;
+   //    margin-left: auto;
+   // }
    @media screen and (min-width: 1200px) {
       display: flex;
       margin-left: auto;
+      margin-bottom: 0;
    }
 }
 

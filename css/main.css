@@ -621,7 +621,7 @@ html {
   text-decoration: none;
   font-style: normal;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .contact-nav {
     display: block;
     text-align: center;
@@ -629,10 +629,8 @@ html {
 }
 @media screen and (min-width: 768px) {
   .contact-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
+    margin-bottom: 60px;
+    margin-left: 76px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -641,6 +639,7 @@ html {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -725,15 +724,22 @@ html {
   margin-top: 0;
   margin-bottom: 30px;
   padding-top: 200px;
-  width: 696px;
+  width: 360px;
   color: var(--primary-white-color);
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 .hero__button {
@@ -1209,17 +1215,6 @@ html {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 60px;
-  }
-}
-
 .footer-content {
   display: block;
 }
@@ -1228,6 +1223,24 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-position {
+    margin-left: auto;
   }
 }
 
@@ -1237,6 +1250,16 @@ html {
 @media screen and (max-width: 767px) {
   .logo-position {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-position {
+    margin-left: 115px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-position {
+    margin-left: auto;
   }
 }
 
@@ -1269,8 +1292,12 @@ html {
   text-align: center;
   width: 206px;
   height: 80px;
-  margin: auto;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .join {
+    margin: auto;
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .join {
@@ -1316,7 +1343,7 @@ html {
   width: 450px;
   height: 156px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .subscribe {
     margin: auto;
   }

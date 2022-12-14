@@ -23,15 +23,21 @@
    margin-top: 0;
    margin-bottom: 30px;
    padding-top: 200px;
-   width: 696px;
+   width: 360px;
    color: var(--primary-white-color);
    font-family: var(--primary-font);
    font-style: normal;
    font-weight: 900;
-   font-size: 44px;
-   line-height: calc(60 / 44);
+   font-size: 26px;
+   line-height: calc(42 / 26);
    letter-spacing: 0.06em;
    text-transform: uppercase;
+  
+   @media screen and (min-width: 1200px) {
+      width: 696px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+   }
 }
 .hero__button {
    background-color: var(--accent-color);
