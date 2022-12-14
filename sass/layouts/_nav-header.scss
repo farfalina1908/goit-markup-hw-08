@@ -1,5 +1,6 @@
 /* Основна навігація */
 .main-nav {
+  
    display: flex;
    align-items: center;
    padding-top: 24px;
@@ -7,6 +8,9 @@
 }
 
 .site-nav {
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
    display: flex;
    margin-left: 93px;
 }
@@ -46,7 +50,8 @@
    border-radius: 2px;
    background-color: var(--accent-color);
 }
-.contact-nav {
+.contact-address {
+ 
    text-decoration: none;
    font-style: normal;
    @media screen and (max-width: 1199px) {
@@ -67,7 +72,18 @@
       margin-bottom: 0;
    }
 }
-
+.contact-nav {
+   
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
+   @media screen and (min-width: 768px) {
+   display: flex;
+   margin-left: auto;
+   text-decoration: none;
+   font-style: normal;
+   }
+}
 .contact-nav__item + .contact-nav__item {
    margin-left: 50px;
 }
