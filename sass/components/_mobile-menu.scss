@@ -117,6 +117,7 @@
 }
 .mobile-socials {
    display: flex;
+   flex-wrap: wrap;
    justify-content: left;
    gap: 10px;
    font-weight: 500;
