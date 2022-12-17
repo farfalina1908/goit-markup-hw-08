@@ -1048,7 +1048,7 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
   padding-top: 200px;
-  width: 360px;
+  width: 100%;
   color: var(--primary-white-color);
   font-family: var(--primary-font);
   font-style: normal;
@@ -1364,10 +1364,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .team__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
@@ -1661,13 +1659,13 @@ img {
 
 .subscribe {
   display: block;
-  text-align: center;
   width: 100%;
   height: 156px;
 }
 @media screen and (max-width: 1199px) {
   .subscribe {
     margin: auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1711,6 +1709,11 @@ img {
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__field {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__field {
